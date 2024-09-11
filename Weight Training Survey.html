@@ -1,0 +1,44 @@
+<html lang="en"></html>
+  <head>
+    <title>Weight Training Survey</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Weight Training Survey</h1>
+    <p id="description">Please fill out this form regarding weight training</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Name <input id="name" type="text" placeholder="Enter your name" required /></label>
+        <label for="email" id="email-label">Email <input id="email" type="email" placeholder="Enter your email" required /></label>
+        <label for="age" id="number-label">Age <input id="number" type="number" min="13" max="100" placeholder="Age" required /></label>
+      </fieldset>
+      <fieldset>
+        <label for="frequency">How often do you train?
+          <select id="dropdown">
+            <option value="">(choose one)</option>
+            <option value="1">1-3 times per week</option>
+            <option value="2">4-6 times per week</option>
+            <option value="3">Every day</option>
+          </select>
+        </label>
+        <label for="reason">Why do you train? 
+          <label><input id="powerlifting" type="radio" value="powerlifting" name="reason" class="reason"/> Powerlifting</label>
+          <label><input id="bodybuilding" type="radio" value="bodybuilding" name="reason" class="reason"/> Bodybuilding</label>
+          <label><input id="powerbuilding" type="radio" value="powerbuilding" name="reason" class="reason"/> Powerbuilding</label>
+          <label><input id="health" type="radio" value="health" name="reason" class="reason"/> Overall Health</label>
+        </label>
+        <label for="muscles">What are your favorite muscles to train?
+          <label><input id="arms" type="checkbox" value="arms" class="reason"/> Arms</label>
+          <label><input id="back" type="checkbox" value="back" class="reason"/> Back</label>
+          <label><input id="chest" type="checkbox" value="chest" class="reason"/> Chest</label>
+          <label><input id="legs" type="checkbox" value="legs" class="reason"/> Legs</label>
+        </label>
+        <label for="comments">Any additional comments?
+          <textarea id="comments" name="comments" rows="4" cols="32" placeholder="Add any comments here..."></textarea>
+        </label>
+        </fieldset>
+        <input class="submit" type="submit" value="Submit" id="submit" />
+      </form>
+    </body>
+  </html>
